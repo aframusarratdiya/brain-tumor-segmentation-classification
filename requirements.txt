@@ -1,0 +1,10 @@
+torch
+torchvision
+segmentation_models_pytorch
+albumentations
+opencv-python
+scikit-learn
+matplotlib
+seaborn
+tqdm
+kagglehub
