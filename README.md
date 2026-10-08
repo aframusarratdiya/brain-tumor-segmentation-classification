@@ -47,9 +47,6 @@ ResNet-34 Encoder (ImageNet Pretrained)
 │
 └── Feature Skip Connections ──► U-Net Decoder ──► Segmentation Head ──► Binary Mask (1 x 256 x 256)
 
-* **Joint Loss Formulation:**
-  $$\mathcal{L}_{total} = \mathcal{L}_{Dice}(\hat{M}, M) + \mathcal{L}_{CrossEntropy}(\hat{Y}, Y)$$
- [cite: 21]
 * **Optimization:** Adam optimizer ($\text{lr} = 10^{-4}$) coupled with a `ReduceLROnPlateau` learning rate scheduler ($\text{factor} = 0.1$, $\text{patience} = 2$) monitoring validation loss[cite: 21].
 
 ---
